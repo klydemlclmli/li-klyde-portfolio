@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Besley';
+  src: url(".\assets\fonts\Besley.ttf");
+}
+
+@font-face {
+  font-family: 'Syne';
+  src: url(".\assets\fonts\Syne.ttf");
+}
