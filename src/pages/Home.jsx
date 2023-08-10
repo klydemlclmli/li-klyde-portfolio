@@ -5,10 +5,11 @@ import Hero from '../components/hero/Hero.jsx'
 
 export default function Home() {
   return (
-    <div className="items-center justify-center w-full min-h-screen bg-main">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-main">
       <Navbar className="z-40"/>
       <Hero/>
-      <div className="absolute w-full h-[700px] bg-black z-10"></div>
+      <div className="w-full h-[970px] bg-black z-10"></div>
+      <div className="w-full h-[970px] z-10"></div>
     </div>
   )
 }
