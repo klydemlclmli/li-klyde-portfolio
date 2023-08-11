@@ -11,3 +11,21 @@
   font-family: 'Syne';
   src: url(".\assets\fonts\Syne.ttf");
 }
+
+@media only screen and (max-width: 937px) {
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+		gap: 50px;
+		transition: 0.5s;
+		z-index: 41;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+}

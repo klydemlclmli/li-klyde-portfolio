@@ -73,8 +73,7 @@ export default function Hero() {
                             lg:left-[-10px] lg:top-[330px]
                             xl:left-[10px]
                             2xl:left-[40px] z-[6]'>
-            <text className='
-                            animate-fadeIn opacity-0 2xl:text-white'>
+            <text className='animate-fadeIn opacity-0 2xl:text-white'>
                               <span className='italic'>L</span>I</text>  
           </div>  
         </div>
