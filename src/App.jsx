@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Home from './pages/Home.jsx'
 import Splash from './pages/Splash.jsx'
 import ScreenSize from './ScreenSize.jsx';

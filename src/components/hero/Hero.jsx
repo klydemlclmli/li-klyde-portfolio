@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-export default function Hero() {
+function Hero() {
 
   // Parallax effect
   const [offsetY, setOffsetY] = useState(0);
@@ -79,37 +79,39 @@ export default function Hero() {
         </div>
 
         <div style={moon} className='relative left-[-40px] xl:bottom-[70px] 2xl:bottom-[175px]'>
-          <img src="images/hero/moon1.png" alt="moon" className='invisible animate-moonUp'/>
+          <img src="images/hero/moon.webp" alt="moon" className='invisible animate-moonUp'/>
         </div>
         
         <div style={mountain4} className='absolute z-[2]'>
-          <img src="images/hero/mountain-4.png" alt="mountain-4" className='animate-mountainOneUp'/>
+          <img src="images/hero/mountain-4.webp" alt="mountain-4" className='animate-mountainOneUp'/>
         </div>
 
         <div style={mountain3} className='absolute z-[4]'>
-          <img src="images/hero/mountain-3.png" alt="mountain-3"className='animate-mountainOneUp'/>
+          <img src="images/hero/mountain-3.webp" alt="mountain-3"className='animate-mountainOneUp'/>
         </div>
 
         <div style={mountain2} className='absolute z-[5]'>
-          <img src="images/hero/mountain-2.png" alt="mountain-2" className='animate-mountainUp'/>
+          <img src="images/hero/mountain-2.webp" alt="mountain-2" className='animate-mountainUp'/>
         </div>
 
         <div style={trees} className='absolute z-[7]'>
-          <img src="images/hero/trees.png" alt="trees" className='animate-treesUp'/>
+          <img src="images/hero/trees.webp" alt="trees" className='animate-treesUp'/>
         </div>
 
         <div style={hero} className='absolute z-[8]'>
-          <img src="images/hero/shadow.png" alt="shadow" 
+          <img src="images/hero/shadow.webp" alt="shadow" 
           className='max-h-[430px] lg:max-h-[690px] animate-shadowUp'/>
         </div>
 
         <div style={hero} className='absolute z-[9]'>
-          <img src="images/hero/hero.png" alt="hero" 
+          <img src="images/hero/hero.webp" alt="hero" 
           className='max-h-[430px] lg:max-h-[690px] animate-slideUp'/>
         </div>
 
       </div>
-      <img src="images/hero/mountain-1.png" alt="mountain-1" className='absolute z-10'/>
+      <img src="images/hero/mountain-1.webp" alt="mountain-1" className='absolute z-10'/>
     </div>
   )
 }
+
+export default Hero

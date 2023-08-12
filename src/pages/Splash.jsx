@@ -3,7 +3,7 @@ import React from 'react';
 const SplashScreen = () => {
   return (
     <div class="fixed flex items-center justify-center w-screen h-screen z-50 bg-splash animate-slideOut">
-      <img src="/images/KML-Beige.png" alt="splash-logo" className='animate-fadeInPulse'/>
+      <img src="/images/KML-Beige.webp" alt="splash-logo" className='min-w-[112px] max-w-[112px] animate-fadeInPulse'/>
     </div>
   );
 };

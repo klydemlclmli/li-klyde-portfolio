@@ -3,7 +3,7 @@ import Navbar from '../components/nav/Navbar.jsx'
 import Hero from '../components/hero/Hero.jsx'
 
 
-export default function Home() {
+function Home() {
 
   const sectionIds = {
     home: 'home',
@@ -29,3 +29,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home

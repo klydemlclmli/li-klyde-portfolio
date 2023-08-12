@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NavbarBtn(props) {
+function NavbarBtn(props) {
 
   // Scroll to the section function
   const scrollToSection = id => {
@@ -28,3 +28,5 @@ export default function NavbarBtn(props) {
     </>
   )
 }
+
+export default NavbarBtn 

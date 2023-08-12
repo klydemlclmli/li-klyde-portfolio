@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRef } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
 import NavbarBtn from './NavbarBtn';
 
-export default function Navbar({sectionIds}) {
+function Navbar({sectionIds}) {
 
   // For the collapsible navbar
   const navRef = useRef();
+
+  const toggleNav = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  }
+
   const showNavBar = () => {
-      navRef.current.classList.toggle("responsive_nav");
+    if (window.innerWidth <= 937){
+        navRef.current.classList.add("responsive_nav");
+        document.body.style.overflow = "hidden";
+    }
+    else{
+      toggleNav();
+    }
+  }
+  const closeNavBar = () => {
+      navRef.current.classList.remove("responsive_nav");
+      document.body.style.overflow = "visible";
   }
 
   return (
@@ -26,26 +41,28 @@ export default function Navbar({sectionIds}) {
       <div className='group/bars flex font-syne text-xl font-semibold pt-[28px] text-black
                       absolute top-[14px] right-[40px] '>
         <nav ref={navRef} className='flex items-center justify-center bg-black text-white z-[41]
-                                      fixed top-[-100vh] left-0 h-full w-full flex-col gap-[50px] 
+                                      fixed top-[-100vh] left-0 h-screen w-screen flex-col gap-[50px] 
                                       duration-[0.5s]
                                       
                                       lg:h-auto lg:w-auto lg:left-auto lg:right-[60px] lg:rounded-lg
                                       lg:gap-[10px] lg:text-black lg:bg-white lg:bg-opacity-70
                                       lg:px-[15px] lg:py-[20px] lg:top-auto lg:invisible lg:opacity-0
                                       lg:shadow-lg'>
-              <NavbarBtn link={sectionIds.home} label="HOME" func={showNavBar}/>
-              <NavbarBtn link={sectionIds.about} label="ABOUT" func={showNavBar}/>
-              <NavbarBtn link={sectionIds.projects} label="PROJECTS" func={showNavBar}/>
-              <NavbarBtn link={sectionIds.designs} label="DESIGNS" func={showNavBar}/>
-              <NavbarBtn link={sectionIds.contact} label="CONTACT" func={showNavBar}/>
-          <button onClick={showNavBar} 
+              <NavbarBtn link={sectionIds.home} label="HOME" func={closeNavBar}/>
+              <NavbarBtn link={sectionIds.about} label="ABOUT" func={closeNavBar}/>
+              <NavbarBtn link={sectionIds.projects} label="PROJECTS" func={closeNavBar}/>
+              <NavbarBtn link={sectionIds.designs} label="DESIGNS" func={closeNavBar}/>
+              <NavbarBtn link={sectionIds.contact} label="CONTACT" func={closeNavBar}/>
+          <button onClick={closeNavBar} 
                   className='lg:hidden'>
             <FaTimes className='text-4xl'/>
           </button>
         </nav>
         <button onClick={showNavBar}
-                className='fixed right-[28px] lg:right-[60px] top-[34px] 
-                        bg-white bg-opacity-70 p-[14px] drop-shadow-md rounded-full '>
+                className='fixed right-[28px] lg:right-[60px] top-[34px] bg-white 
+                          bg-opacity-70 p-[14px] drop-shadow-md rounded-full 
+                          hover:bg-opacity-90 hover:duration-[0.2s] hover:delay-100
+                          hover:drop-shadow-[0_1px_7px_rgba(255,255,255,0.15)]'>
           <FaBars className='bars text-3xl'/>
         </button>
       </div>
@@ -54,3 +71,5 @@ export default function Navbar({sectionIds}) {
     </>
   )
 }
+
+export default Navbar

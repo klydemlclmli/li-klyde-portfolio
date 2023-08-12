@@ -16,6 +16,9 @@
 	header .responsive_nav {
 		transform: translateY(100vh);
 	}
+	header .close_nav {
+		transform: translateY(-100vh);
+	}
 }
 
 @media only screen and (min-width: 938px) {
