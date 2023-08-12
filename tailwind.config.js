@@ -5,7 +5,7 @@ export default {
     extend: { 
       keyframes: {
         slideOut: {
-          '0%': {transform: 'translateY(0)'},
+          '0%': {transform: 'translateY(0)', visibility: 'visible'},
           '100%': {transform: 'translateY(-100%)', visibility: 'hidden'}
         },
         fadeInPulse: {

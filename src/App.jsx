@@ -1,8 +1,15 @@
-import Home from './pages/Home.jsx'
-import Splash from './pages/Splash.jsx'
-import ScreenSize from './ScreenSize.jsx';
+import { lazy } from 'react';
+const Home = lazy(() => import('./pages/Home.jsx'))
+const Splash = lazy(() => import('./pages/Splash.jsx'))
+const ScreenSize = lazy(() => import('./ScreenSize.jsx'))
 
 function App() {
+  document.body.style.overflow = 'hidden';
+
+  // After 3.5 seconds (3500 milliseconds), revert overflow to 'visible'
+  setTimeout(() => {
+    document.body.style.overflow = 'visible';
+  }, 3500);
 
     return (
       <>

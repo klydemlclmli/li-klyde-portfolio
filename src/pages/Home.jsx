@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../components/nav/Navbar.jsx'
-import Hero from '../components/hero/Hero.jsx'
+import React, { lazy } from 'react'
+const Navbar = lazy(() => import('../components/nav/Navbar.jsx'));
+const Hero = lazy(() => import('../components/hero/Hero.jsx'));
 
 
 function Home() {
