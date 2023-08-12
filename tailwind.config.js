@@ -18,8 +18,8 @@ export default {
           '100%': {opacity: '1'}
         },
         slideUp: {
-          '0%': {transform: 'translateY(700px)'},
-          '100%': {transform: 'translateY(0)'}
+          '0%': {transform: 'translateY(700px)', visibility: 'hidden'},
+          '100%': {transform: 'translateY(0)', visibility: 'visible'}
         },
         pulse:{
           '0%, 100': {opacity: '1'},

@@ -79,7 +79,7 @@ export default function Hero() {
         </div>
 
         <div style={moon} className='relative left-[-40px] xl:bottom-[70px] 2xl:bottom-[175px]'>
-          <img src="images/hero/moon1.png" alt="moon" className='animate-moonUp'/>
+          <img src="images/hero/moon1.png" alt="moon" className='invisible animate-moonUp'/>
         </div>
         
         <div style={mountain4} className='absolute z-[2]'>
