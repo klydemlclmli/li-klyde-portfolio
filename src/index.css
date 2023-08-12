@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: 'Besley';
-  src: url("public/assets/fonts/Besley.ttf");
+  src: url("../assets/fonts/Besley.ttf");
 }
 
 @font-face {
   font-family: 'Syne';
-  src: url("public/assets/fonts/Syne.ttf");
+  src: url("../assets/fonts/Syne.ttf");
 }
 
 @media only screen and (max-width: 937px) {
