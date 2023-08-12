@@ -41,11 +41,11 @@ function Navbar({sectionIds}) {
                       absolute top-[14px] right-[40px] '>
         <nav ref={navRef} className='flex items-center justify-center bg-black text-white z-[41]
                                       fixed top-[-100vh] left-0 h-screen w-screen flex-col gap-[50px] 
-                                      duration-[0.5s]
+                                      duration-[0.5s] invisible
                                       
                                       lg:h-auto lg:w-auto lg:left-auto lg:right-[60px] lg:rounded-lg
                                       lg:gap-[10px] lg:text-black lg:bg-white lg:bg-opacity-70
-                                      lg:px-[15px] lg:py-[20px] lg:top-auto lg:invisible lg:opacity-0
+                                      lg:px-[15px] lg:py-[20px] lg:top-auto lg:opacity-0
                                       lg:shadow-lg'>
               <NavbarBtn link={sectionIds.home} label="HOME" func={closeNavBar}/>
               <NavbarBtn link={sectionIds.about} label="ABOUT" func={closeNavBar}/>
