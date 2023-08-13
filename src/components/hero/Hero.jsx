@@ -54,27 +54,27 @@ function Hero() {
                         font-besley font-medium
                         text-5xl lg:text-6xl xl:text-7xl 2xl:text-[100px]'>
           <div style={name} className='z-[3]'>
-          <text className='relative left-[-10px]
+          <p className='relative left-[-10px]
                           md:left-[-70px] md:top-0
                           lg:left-[-100px] lg:top-[50px]
                           xl:left-[-150px]
-                          2xl:left-[-200px] animate-slideDown'><span className='italic'>K</span>LYDE</text> 
+                          2xl:left-[-200px] animate-slideDown'><span className='italic'>K</span>LYDE</p> 
           </div> 
           <div style={name} className='z-[3]'>
-          <text className='relative left-[10px] top-[4px]
+          <p className='relative left-[10px] top-[4px]
                           md:left-[190px] md:top-[50px]
                           lg:left-[250px] lg:top-[100px]
                           xl:left-[280px]
                           2xl:left-[400px] animate-slideLeft'>
-                            MALCOLM</text>  
+                            MALCOLM</p>  
           </div>
           <div style={name} className='self-end relative left-[-10px] top-[4px]
                             md:self-start md:left-[5px] md:top-[110px]
                             lg:left-[-10px] lg:top-[200px]
                             xl:left-[10px] 2xl:top-[290px]
                             2xl:left-[40px] z-[6]'>
-            <text className='animate-fadeIn opacity-0 2xl:text-white'>
-                              <span className='italic'>L</span>I</text>  
+            <p className='animate-fadeIn opacity-0 2xl:text-white'>
+                              <span className='italic'>L</span>I</p>  
           </div>  
         </div>
 

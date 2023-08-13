@@ -40,8 +40,8 @@ function Navbar({sectionIds}) {
       <div className='group/bars flex font-syne text-xl font-semibold pt-[28px] text-black
                       absolute top-[14px] right-[40px] '>
         <nav ref={navRef} className='flex items-center justify-center bg-black text-white z-[41]
-                                      fixed top-[-100vh] left-0 h-screen w-screen flex-col gap-[30px] 
-                                      duration-[0.5s] invisible
+                                      fixed top-[-100vh] left-0 h-screen w-screen flex-col gap-[40px] 
+                                      duration-[0.5s] invisible pb-[70px]
                                       
                                       lg:h-auto lg:w-auto lg:left-auto lg:right-[60px] lg:rounded-lg
                                       lg:gap-[10px] lg:text-black lg:bg-white lg:bg-opacity-70

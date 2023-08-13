@@ -29,3 +29,11 @@
 		transform: translateY(70px);
 	}
 }
+
+.base{
+	@apply flex flex-col items-center justify-center;
+}
+
+.aboutText{
+	@apply relative top-[70px] md:top-[40px] lg:top-[70px] 2xl:top-[110px]
+}
