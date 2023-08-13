@@ -46,32 +46,32 @@ function Hero() {
   const hero = {transform: `translateY(${offsetY * 0.1}px)`};
 
   return (
-    <div className='flex w-full items-end justify-center'>
+    <div className='flex relative w-full items-end justify-center'>
       <div ref={ref} style={section} className='flex w-full items-end justify-center
-                      h-[531px] lg:h-[827px] text-black'>               
+                      h-[517px] md:h-[430px] lg:h-[624px] xl:h-[724px] 2xl:h-[824px] text-black'>               
       
         <div className='flex flex-col absolute self-start 
                         font-besley font-medium
                         text-5xl lg:text-6xl xl:text-7xl 2xl:text-[100px]'>
-          <div style={name} className='z-[1]'>
-          <text className='relative left-[-10px] top-[10px]
-                          md:left-[-70px] md:top-[100px]
-                          lg:left-[-100px] lg:top-[150px]
+          <div style={name} className='z-[3]'>
+          <text className='relative left-[-10px]
+                          md:left-[-70px] md:top-0
+                          lg:left-[-100px] lg:top-[50px]
                           xl:left-[-150px]
                           2xl:left-[-200px] animate-slideDown'><span className='italic'>K</span>LYDE</text> 
           </div> 
           <div style={name} className='z-[3]'>
-          <text className='relative left-[10px] top-[14px]
-                          md:left-[190px] md:top-[150px]
-                          lg:left-[250px] lg:top-[200px]
+          <text className='relative left-[10px] top-[4px]
+                          md:left-[190px] md:top-[50px]
+                          lg:left-[250px] lg:top-[100px]
                           xl:left-[280px]
                           2xl:left-[400px] animate-slideLeft'>
                             MALCOLM</text>  
           </div>
-          <div style={name} className='self-end relative left-[-10px] top-[24px]
-                            md:self-start md:left-[5px] md:top-[200px]
-                            lg:left-[-10px] lg:top-[330px]
-                            xl:left-[10px]
+          <div style={name} className='self-end relative left-[-10px] top-[4px]
+                            md:self-start md:left-[5px] md:top-[110px]
+                            lg:left-[-10px] lg:top-[200px]
+                            xl:left-[10px] 2xl:top-[290px]
                             2xl:left-[40px] z-[6]'>
             <text className='animate-fadeIn opacity-0 2xl:text-white'>
                               <span className='italic'>L</span>I</text>  
@@ -83,33 +83,33 @@ function Hero() {
         </div>
         
         <div style={mountain4} className='absolute z-[2]'>
-          <img src="images/hero/mountain-4.webp" alt="mountain-4" className='animate-mountainOneUp'/>
+          <img src="images/hero/mountain-4.webp" alt="mountain-4" className='animate-mountainOneUp w-screen'/>
         </div>
 
         <div style={mountain3} className='absolute z-[4]'>
-          <img src="images/hero/mountain-3.webp" alt="mountain-3"className='animate-mountainOneUp'/>
+          <img src="images/hero/mountain-3.webp" alt="mountain-3"className='animate-mountainOneUp w-screen'/>
         </div>
 
         <div style={mountain2} className='absolute z-[5]'>
-          <img src="images/hero/mountain-2.webp" alt="mountain-2" className='animate-mountainUp'/>
+          <img src="images/hero/mountain-2.webp" alt="mountain-2" className='animate-mountainUp w-screen'/>
         </div>
 
         <div style={trees} className='absolute z-[7]'>
-          <img src="images/hero/trees.webp" alt="trees" className='animate-treesUp'/>
+          <img src="images/hero/trees.webp" alt="trees" className='animate-treesUp w-screen'/>
         </div>
 
         <div style={hero} className='absolute z-[8]'>
           <img src="images/hero/shadow.webp" alt="shadow" 
-          className='max-h-[430px] lg:max-h-[690px] animate-shadowUp'/>
+          className='max-h-[430px] lg:max-h-[690px] animate-shadowUp w-full'/>
         </div>
 
         <div style={hero} className='absolute z-[9]'>
           <img src="images/hero/hero.webp" alt="hero" 
-          className='max-h-[430px] lg:max-h-[690px] animate-slideUp'/>
+          className='max-h-[430px] lg:max-h-[690px] animate-slideUp w-full'/>
         </div>
 
       </div>
-      <img src="images/hero/mountain-1.webp" alt="mountain-1" className='absolute z-10'/>
+      <img src="images/hero/mountain-1.webp" alt="mountain-1" className='absolute z-10 w-full'/>
     </div>
   )
 }

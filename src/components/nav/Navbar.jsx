@@ -31,7 +31,7 @@ function Navbar({sectionIds}) {
 
       <div className='absolute top-[28px] 
                       left-[28px] lg:left-[60px] xl:left-[131px]'>
-        <a href="/#"><img src="images/KML.png" alt="logo" 
+        <a href="/#"><img src="images/KML.webp" alt="logo" 
                       className='min-w-[70px] max-w-[70px]
                                 md:min-w-[80px] md:max-w-[80px]'/>
         </a>
@@ -40,7 +40,7 @@ function Navbar({sectionIds}) {
       <div className='group/bars flex font-syne text-xl font-semibold pt-[28px] text-black
                       absolute top-[14px] right-[40px] '>
         <nav ref={navRef} className='flex items-center justify-center bg-black text-white z-[41]
-                                      fixed top-[-100vh] left-0 h-screen w-screen flex-col gap-[50px] 
+                                      fixed top-[-100vh] left-0 h-screen w-screen flex-col gap-[30px] 
                                       duration-[0.5s] invisible
                                       
                                       lg:h-auto lg:w-auto lg:left-auto lg:right-[60px] lg:rounded-lg
