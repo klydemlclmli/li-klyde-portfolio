@@ -31,9 +31,13 @@
 }
 
 .base{
-	@apply flex flex-col items-center justify-center;
+	@apply flex flex-col items-center;
 }
 
 .aboutText{
 	@apply relative top-[70px] md:top-[40px] lg:top-[70px] 2xl:top-[110px]
+}
+
+.sectionLabel{
+	@apply font-besley text-4xl lg:text-5xl 2xl:text-[60px] font-medium underline underline-offset-8 pb-1
 }

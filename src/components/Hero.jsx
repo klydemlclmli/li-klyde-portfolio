@@ -1,16 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
+import useParallax from '../scripts/Parallax';
 
 function Hero() {
 
   // Parallax effect
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.scrollY);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const { offsetY } = useParallax();
 
   // Ref for conditionally applying the parallax effect only if the element is in the viewport
   const ref = useRef(null);

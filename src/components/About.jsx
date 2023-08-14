@@ -1,23 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react'
+import useParallax from '../scripts/Parallax';
 
 export default function About({sectionIds}) {
 
   // Parallax effect
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.scrollY);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  const { offsetY } = useParallax();
   const text = {transform: `translateY(${offsetY * -0.13}px)`};
 
   return (
-    <div id={sectionIds.about} className='base font-syne text-xl lg:text-2xl 2xl:text-[28px] text-white w-full pt-[78px] px-14 xl:px-20 2xl:px-[130px] bg-black text-justify z-10 gap-[40px] md:gap-[70px] 2xl:gap-[80px]'>
+    <div id={sectionIds.about} className='base font-syne text-xl lg:text-2xl 2xl:text-[28px] text-white w-full pt-[78px] md:pb-[30px] px-14 xl:px-20 2xl:px-[130px] bg-black text-justify z-10 gap-[40px] md:gap-[70px] 2xl:gap-[80px]'>
       
-      <p style={text} className='aboutText font-besley text-4xl lg:text-5xl 2xl:text-[60px] font-medium underline underline-offset-8 pb-1 md:self-start'>
+      <p style={text} className='aboutText sectionLabel md:self-start'>
         ABOUT ME
       </p>
 
