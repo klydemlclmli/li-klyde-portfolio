@@ -1,7 +1,7 @@
-import { lazy } from 'react';
-const Home = lazy(() => import('./pages/Home.jsx'))
-const Splash = lazy(() => import('./pages/Splash.jsx'))
-const ScreenSize = lazy(() => import('./ScreenSize.jsx'))
+import { lazy, Suspense } from 'react';
+import Home from './pages/Home.jsx';
+const Splash = lazy(() => import('./pages/Splash.jsx'));
+const ScreenSize = lazy(() => import('./ScreenSize.jsx'));
 
 function App() {
   document.body.style.overflow = 'hidden';
@@ -13,9 +13,11 @@ function App() {
 
     return (
       <>
-        <Splash className='z-50'/>
-        <Home/>
-        <ScreenSize/>
+        <Suspense>
+          <Splash className='z-50'/>
+          <Home/>
+          <ScreenSize/>
+        </Suspense>
       </>
     )
 }

@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react'
-const Navbar = lazy(() => import('../components/nav/Navbar.jsx'));
+import Navbar from '../components/nav/Navbar.jsx';
 const Hero = lazy(() => import('../components/Hero.jsx'));
 const About = lazy(() => import('../components/About.jsx'));
 const Projects  = lazy(() => import('../components/Projects.jsx'));
