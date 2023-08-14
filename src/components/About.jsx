@@ -4,7 +4,7 @@ export default function About({sectionIds}) {
 
   // Parallax effect
   const { offsetY } = useParallax();
-  const text = {transform: `translateY(${offsetY * -0.13}px)`};
+  const text = {transform: `translateY(${offsetY * -0.11}px)`};
 
   return (
     <div id={sectionIds.about} className='base font-syne text-xl lg:text-2xl 2xl:text-[28px] text-white w-full pt-[78px] md:pb-[30px] px-14 xl:px-20 2xl:px-[130px] bg-black text-justify z-10 gap-[40px] md:gap-[70px] 2xl:gap-[80px]'>

@@ -12,22 +12,12 @@
   src: url("../assets/fonts/Syne.ttf");
 }
 
-@media only screen and (max-width: 937px) {
-	header .responsive_nav {
-		transform: translateY(100vh);
-		visibility: visible;
-	}
-	header .close_nav {
-		transform: translateY(-100vh);
-	}
+header .responsive_nav {
+	@apply transform translate-y-[100vh] visible
+	lg:transform lg:translate-y-[70px] lg:visible lg:opacity-100
 }
-
-@media only screen and (min-width: 938px) {
-	header .responsive_nav{
-		visibility: visible;
-		opacity: 1;
-		transform: translateY(70px);
-	}
+header .close_nav {
+	@apply transform translate-y-[-100vh]
 }
 
 .base{
@@ -41,3 +31,21 @@
 .sectionLabel{
 	@apply font-besley text-4xl lg:text-5xl 2xl:text-[60px] font-medium underline underline-offset-8 pb-1
 }
+
+
+.swiper-slide-img{
+	@apply w-[27rem] h-[300px] lg:w-[37rem] lg:h-[42rem] object-cover
+}
+
+.slider-arrow{
+	color: #BABABA !important;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+	content: "" !important;
+}
+
+.slider-arrow{
+	@apply absolute translate-y-10
+}
+
