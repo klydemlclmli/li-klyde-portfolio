@@ -29,7 +29,7 @@ export default function About({sectionIds}) {
 
       <div>
         <p style={text} className='aboutText md:w-[550px] lg:w-[600px] 2xl:w-[820px]'>
-        Having participated in various projects, I have experience in different roles including <b>Web Designer and Developer</b>, Project Manager, and Quality Assurance Officer but what I have really taken interest in is creating user-centered and visually appealing digital experiences.
+        Having participated in various projects, I have experience in different roles including <b>Web Designer and Developer</b>, Project Manager, and Quality Assurance Officer but what truly captivated my interest is creating user-centered and visually appealing digital experiences.
         </p>
       </div>
 
