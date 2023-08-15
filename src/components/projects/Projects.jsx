@@ -39,15 +39,15 @@ export default function Projects({sectionIds}) {
         className="swiper_container slider"
       >
         <SwiperSlide className='swiper-slide'>
-          <img src="/images/core.png" alt="slide_image" className='swiper-slide-img'/>
+          <img src="/images/projects/core.webp" alt="slide_image" className='swiper-slide-img'/>
           <ProjectLabel label='CEAP Online Resources for Education (CORE)'/>
         </SwiperSlide>
         <SwiperSlide className='swiper-slide'>
-          <img src="/images/bosspaayos.png" alt="slide_image" className='swiper-slide-img object-left'/>
+          <img src="/images/projects/cryptocause.webp" alt="slide_image" className='swiper-slide-img object-left'/>
           <ProjectLabel label='CryptoCause'/>
         </SwiperSlide>
         <SwiperSlide className='swiper-slide'>
-          <img src="/images/asea.png" alt="slide_image" className='swiper-slide-img'/>
+          <img src="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img'/>
           <ProjectLabel label='Web-based Appointment System for ASEA iWork Builders Co.'/>
         </SwiperSlide>
 

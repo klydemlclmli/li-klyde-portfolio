@@ -6,7 +6,7 @@ import ScreenSize from './ScreenSize.jsx'
 function App() {
   document.body.style.overflow = 'hidden';
 
-  // After 3.5 seconds, revert overflow to 'visible'
+  // After 2.5 seconds, revert overflow to 'visible'
   setTimeout(() => {
     document.body.style.overflow = 'visible';
   }, 2500);
