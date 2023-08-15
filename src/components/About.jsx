@@ -14,7 +14,7 @@ export default function About({sectionIds}) {
       </p>
 
       <p style={text} className='aboutText md:w-[400px] lg:w-[450px] xl:w-[500px] 2xl:w-[540px] z-[1]'>
-        Hey, there! I’m <b>Klyde</b>, an aspiring UI/UX Designer as of the creation of this portfolio.
+        Hey, there! I’m <b>Klyde</b>, an aspiring Web Designer and Developer as of the creation of this portfolio.
       </p>
 
       <div className='base md:flex-row gap-[40px] xl:gap-[60px] 2xl:gap-[140px]'>
@@ -29,7 +29,7 @@ export default function About({sectionIds}) {
 
       <div>
         <p style={text} className='aboutText md:w-[550px] lg:w-[600px] 2xl:w-[820px]'>
-          Having participated in various projects in college, I had experience in various roles such as Project Manager, Quality Assurance Officer, Developer, and <b>UI/UX Designer</b> but what I had really taken interest in is the last one.
+        Having participated in various projects, I have experience in different roles including <b>Web Designer and Developer</b>, Project Manager, and Quality Assurance Officer but what I have really taken interest in is creating user-centered and visually appealing digital experiences.
         </p>
       </div>
 
