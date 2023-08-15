@@ -12,7 +12,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 export default function Projects({sectionIds}) {
   return (
-    <div id={sectionIds.projects} className='base w-full gap-[40px] 2xl:gap-[70px] bg-navy text-white py-[70px] 2xl:py-[60px] px-[12px] md:px-8 xl:px-20 z-10'>
+    <div id={sectionIds.projects} className='base w-full gap-[40px] 2xl:gap-[70px] bg-navy text-white py-[90px] px-[12px] md:px-8 xl:px-20 z-10'>
 
       <p className='sectionLabel'>
         PROJECTS
