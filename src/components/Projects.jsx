@@ -1,7 +1,7 @@
 import React from 'react'
+import ProjectLabel from './ProjectLabel';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FaArrowCircleLeft, FaArrowCircleRight} from "react-icons/fa";
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -12,7 +12,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 export default function Projects({sectionIds}) {
   return (
-    <div id={sectionIds.projects} className='base w-full gap-[40px] bg-navy text-white py-[78px] px-14 xl:px-20 2xl:px-[130px] z-10'>
+    <div id={sectionIds.projects} className='base w-full gap-[40px] 2xl:gap-[70px] bg-navy text-white py-[70px] 2xl:py-[60px] px-[12px] md:px-8 xl:px-20 z-10'>
 
       <p className='sectionLabel'>
         PROJECTS
@@ -20,7 +20,6 @@ export default function Projects({sectionIds}) {
 
       <Swiper
         effect={'coverflow'}
-        grabCursor={true}
         centeredSlides={true}
         loop={false}
         slidesPerView={'auto'}
@@ -37,24 +36,33 @@ export default function Projects({sectionIds}) {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
+        className="swiper_container slider"
       >
-        <SwiperSlide className='max-w-[500px]'>
+        <SwiperSlide className='swiper-slide'>
           <img src="/images/core.png" alt="slide_image" className='swiper-slide-img'/>
+          <ProjectLabel label='CEAP Online Resources for Education (CORE)'/>
         </SwiperSlide>
-        <SwiperSlide className='max-w-[500px]'>
-          <img src="/images/bosspaayos.png" alt="slide_image" className='swiper-slide-img'/>
+        <SwiperSlide className='swiper-slide'>
+          <img src="/images/bosspaayos.png" alt="slide_image" className='swiper-slide-img object-left'/>
+          <ProjectLabel label='CryptoCause'/>
         </SwiperSlide>
-        <SwiperSlide className='max-w-[500px]'>
+        <SwiperSlide className='swiper-slide'>
           <img src="/images/asea.png" alt="slide_image" className='swiper-slide-img'/>
+          <ProjectLabel label='Web-based Appointment System for ASEA iWork Builders Co.'/>
         </SwiperSlide>
 
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
-            <FaArrowCircleLeft/>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="13" cy="13" r="13" fill="#D9D9D9"/>
+            <path d="M16 8L10 13L16 18" stroke="#1C1C1C" stroke-width="2"/>
+            </svg>
           </div>
           <div className="swiper-button-next slider-arrow">
-            <FaArrowCircleRight/>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="13" cy="13" r="13" transform="rotate(-180 13 13)" fill="#D9D9D9"/>
+            <path d="M10 18L16 13L10 8" stroke="#1C1C1C" stroke-width="2"/>
+            </svg>
           </div>
           <div className="swiper-pagination"></div>
         </div>

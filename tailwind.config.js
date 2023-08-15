@@ -2,7 +2,10 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
-    extend: { 
+    extend: {
+      dropShadow:{
+        'btn-shadow': '0px 0px 34px rgba(255, 255, 255, 0.25)'
+      },
       keyframes: {
         slideOut: {
           '0%': {transform: 'translateY(0)', visibility: 'visible'},

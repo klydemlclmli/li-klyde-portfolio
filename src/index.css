@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
 @font-face {
   font-family: 'Besley';
   src: url("../assets/fonts/Besley.ttf");
@@ -12,6 +13,7 @@
   src: url("../assets/fonts/Syne.ttf");
 }
 
+/* Collapsible Navbar */
 header .responsive_nav {
 	@apply transform translate-y-[100vh] visible
 	lg:transform lg:translate-y-[70px] lg:visible lg:opacity-100
@@ -20,6 +22,7 @@ header .close_nav {
 	@apply transform translate-y-[-100vh]
 }
 
+/* Texts and Labels */
 .base{
 	@apply flex flex-col items-center;
 }
@@ -33,8 +36,61 @@ header .close_nav {
 }
 
 
+/* For the slider in Projects section */
+.swiper-slide{
+ @apply max-w-[250px] md:max-w-[30rem] lg:max-w-[40rem] 2xl:max-w-[1080px] mb-[100px] 
+}
+
 .swiper-slide-img{
-	@apply w-[27rem] h-[300px] lg:w-[37rem] lg:h-[42rem] object-cover
+	@apply w-auto h-[350px] md:min-h-[30rem] xl:min-h-[35rem] object-cover
+}
+
+.slider-controler {
+	@apply relative bottom-4 flex items-center justify-center
+}
+
+/* xl - 2xl screen */
+.slider-controler .swiper-button-next {
+  left: 58%;
+	top: -17px;
+	z-index: 20 !important;
+  transform: translateX(-58%) !important;
+}
+.slider-controler .swiper-button-prev {
+  left: 42%;
+	top: -17px;
+	z-index: 20 !important;
+  transform: translateX(-42%) !important;
+}
+
+/* md - lg screens */
+@media (max-width: 1099px) {
+  .slider-controler .swiper-button-next {
+    left: 60% !important;
+    transform: translateX(-60%) !important;
+  }
+}
+
+@media (max-width: 1099px) {
+	.slider-controler .swiper-button-prev {
+		left: 40% !important;
+    transform: translateX(-40%) !important;
+  }
+}
+
+/* sm screens */
+@media (max-width: 740px) {
+	.slider-controler .swiper-button-next {
+		left: 80% !important;
+		transform: translateX(-80%) !important;
+	}
+}
+
+@media (max-width: 740px) {
+  .slider-controler .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
 }
 
 .slider-arrow{
@@ -45,7 +101,10 @@ header .close_nav {
 	content: "" !important;
 }
 
-.slider-arrow{
-	@apply absolute translate-y-10
+.swiper-pagination .swiper-pagination-bullet {
+  @apply bg-transparent border-2 border-white
 }
 
+.swiper-pagination .swiper-pagination-bullet-active {
+	@apply bg-white
+}

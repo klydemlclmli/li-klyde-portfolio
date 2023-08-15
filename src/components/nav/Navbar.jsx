@@ -1,6 +1,6 @@
-import React, { lazy, useRef } from 'react'
+import React, { useRef } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa";
-const NavbarBtn = lazy(() => import('./NavbarBtn'));
+import NavbarBtn from './NavbarBtn';
 
 function Navbar({sectionIds}) {
 
