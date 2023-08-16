@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.designs{
-	background-image: url('/images/bg.webp');
+/* url('/images/bg.webp') */
+
+/* .designs{
+	background-image: radial-gradient(50% 50.00% at 50% 50.00%, #CDD4D7 0%, #8B8F90 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
+} */
+
+/* lazy loading */
+
+.lazyMe{
+  @apply opacity-0 transition-all duration-[1s] ease-in-out
+}
+
+.unlazyMe{
+  @apply opacity-100 transition-all duration-[1s] ease-in-out
 }
 
 /* Fonts */

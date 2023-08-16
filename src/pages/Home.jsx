@@ -16,7 +16,7 @@ function Home() {
   };
   
   return (
-    <div className="flex flex-col w-full min-h-screen designs">
+    <div className="flex flex-col w-full min-h-screen bg-main">
       <Navbar sectionIds={sectionIds}/>
       <Hero/>
       <About sectionIds={sectionIds}/>

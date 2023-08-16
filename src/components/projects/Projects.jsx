@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectLabel from './ProjectLabel';
+import { lazyLoader } from '../../scripts/LazyLoader';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -11,6 +12,8 @@ import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 export default function Projects({sectionIds}) {
+  lazyLoader();
+
   return (
     <div id={sectionIds.projects} className='base w-full gap-[40px] 2xl:gap-[70px] bg-navy text-white py-[90px] px-[12px] md:px-8 xl:px-20 z-10'>
 
@@ -39,15 +42,15 @@ export default function Projects({sectionIds}) {
         className="swiper_container slider"
       >
         <SwiperSlide className='swiper-slide'>
-          <img src="/images/projects/core.webp" alt="slide_image" className='swiper-slide-img'/>
+          <img lazyPic="/images/projects/core.webp" alt="slide_image" className='swiper-slide-img lazyMe'/>
           <ProjectLabel label='CEAP Online Resources for Education (CORE)'/>
         </SwiperSlide>
         <SwiperSlide className='swiper-slide'>
-          <img src="/images/projects/cryptocause.webp" alt="slide_image" className='swiper-slide-img object-left'/>
+          <img lazyPic="/images/projects/cryptocause.webp" alt="slide_image" className='swiper-slide-img object-left lazyMe'/>
           <ProjectLabel label='CryptoCause'/>
         </SwiperSlide>
         <SwiperSlide className='swiper-slide'>
-          <img src="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img'/>
+          <img lazyPic="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img lazyMe'/>
           <ProjectLabel label='Web-based Appointment System for ASEA iWork Builders Co.'/>
         </SwiperSlide>
 

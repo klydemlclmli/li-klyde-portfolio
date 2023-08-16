@@ -1,6 +1,9 @@
 import useParallax from '../scripts/Parallax';
+import { lazyLoader } from '../scripts/LazyLoader';
 
 export default function About({sectionIds}) {
+
+  lazyLoader();
 
   // Parallax effect
   const { offsetY } = useParallax();
@@ -19,8 +22,8 @@ export default function About({sectionIds}) {
 
       <div className='base md:flex-row gap-[40px] xl:gap-[60px] 2xl:gap-[140px]'>
         <div>
-          <img src="images/about-pic.webp" alt="about-pic" 
-            className='my-4 pb-16 lg:pb-20 2xl:pb-28 max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] 2xl:max-w-[540px] w-full'/>
+          <img lazyPic="images/about-pic.webp" alt="about-pic" 
+            className='lazyMe my-4 pb-16 lg:pb-20 2xl:pb-28 max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] 2xl:max-w-[540px] w-full'/>
         </div>
         <p style={text} className='aboutText md:w-[400px] 2xl:w-[535px]'>
           A fresh grad from the University of Santo Tomas (Manila, Philippines) with a degree on Bachelor of Science in <b>Information Technology</b>, I specialized in Web and Mobile Development.
