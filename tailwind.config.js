@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       dropShadow:{
-        'btn-shadow': '0px 0px 34px rgba(255, 255, 255, 0.25)'
+        'btn-shadow': '0px 0px 34px rgba(255, 255, 255, 0.25)',
+        'blk-shadow': '0px 0px 34px rgba(0, 0, 0, 0.25)'
       },
       keyframes: {
         slideOut: {
@@ -61,7 +62,8 @@ export default {
       'darker-beige': '#A59A8D',
       'darkest-beige': '#59534D',
       'socmed-hover': '#887E72',
-      'transparent': 'transparent'
+      'transparent': 'transparent',
+      'og-white': '#FFFFFF',
       },
     
     backgroundImage: {

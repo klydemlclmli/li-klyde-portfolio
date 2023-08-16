@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.designs{
+	background-image: url('public/images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
 /* Fonts */
 @font-face {
   font-family: 'Besley';
@@ -107,4 +115,10 @@ header .close_nav {
 
 .swiper-pagination .swiper-pagination-bullet-active {
 	@apply bg-white
+}
+
+/* Designs section images */
+
+.design-img{
+	@apply max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[820px] md:drop-shadow-blk-shadow
 }

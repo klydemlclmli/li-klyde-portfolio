@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button.jsx'
+import Button from '../buttons/Button.jsx'
 
 export default function (props) {
   return (
