@@ -94,12 +94,12 @@ function Hero() {
 
         <div style={hero} className='absolute z-[8]'>
           <img src="images/hero/shadow.webp" alt="shadow" 
-          className='max-h-[430px] lg:max-h-[690px] animate-shadowUp w-full'/>
+          className='max-h-[430px] lg:max-h-[690px] animate-shadowUp'/>
         </div>
 
         <div style={hero} className='absolute z-[9]'>
           <img src="images/hero/hero.webp" alt="hero" 
-          className='max-h-[430px] lg:max-h-[690px] animate-slideUp w-full'/>
+          className='max-h-[430px] lg:max-h-[690px] animate-slideUp'/>
         </div>
 
       </div>
