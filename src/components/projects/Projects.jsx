@@ -41,16 +41,19 @@ export default function Projects({sectionIds}) {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container slider lazyMe"
       >
-        <SwiperSlide className='swiper-slide'>
-          <img lazyPic="/images/projects/core.webp" alt="slide_image" className='swiper-slide-img lazyMe'/>
+        <SwiperSlide className='swiper-slide relative'>
+          <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
+          <img lazyPic="/images/projects/core.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
           <ProjectLabel label='CEAP Online Resources for Education (CORE)'/>
         </SwiperSlide>
-        <SwiperSlide className='swiper-slide'>
-          <img lazyPic="/images/projects/cryptocause.webp" alt="slide_image" className='swiper-slide-img object-left lazyMe'/>
+        <SwiperSlide className='swiper-slide relative'>
+          <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
+          <img lazyPic="/images/projects/cryptocause.webp" alt="slide_image" className='swiper-slide-img object-left lazyMe absolute top-0 left-0'/>
           <ProjectLabel label='CryptoCause'/>
         </SwiperSlide>
-        <SwiperSlide className='swiper-slide'>
-          <img lazyPic="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img lazyMe'/>
+        <SwiperSlide className='swiper-slide relative'>
+          <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
+          <img lazyPic="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
           <ProjectLabel label='Web-based Appointment System for ASEA iWork Builders Co.'/>
         </SwiperSlide>
 

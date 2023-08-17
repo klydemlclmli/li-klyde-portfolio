@@ -7,13 +7,13 @@ export function lazyLoader(){
         if (entry.isIntersecting) {
           const img = entry.target;
           const src = img.getAttribute('lazyPic');
-
           img.setAttribute('src', src);
           img.classList.add('unlazyMe');
-
           observer.disconnect();
         }
+
       });
+
     });
 
     io.observe(target)

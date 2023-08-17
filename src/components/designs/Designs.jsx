@@ -17,17 +17,24 @@ export default function Designs({sectionIds}) {
       <div className='base w-full md:gap-[90px] xl:gap-[120px] 2xl:gap-[170px]'>
 
         <div className='lazyMe flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
-          <img lazyPic="/images/designs/tuklaspital.webp" alt="design_image" className='design-img lazyMe'/>
-            <div className='flex flex-col items-end md:gap-2 xl:gap-4 '>
-              <DesignLabel title='Tuklaspital' tool='Adobe XD'/>
-              <div className='mr-5 relative bottom-[62px] md:static md:mr-0'>
-                <Button2 text='VIEW'/>
-              </div>
+          <div className='relative'>
+            <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
+            <img lazyPic="/images/designs/tuklaspital.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
+          </div>
+          
+          <div className='flex flex-col items-end md:gap-2 xl:gap-4 '>
+            <DesignLabel title='Tuklaspital' tool='Adobe XD'/>
+            <div className='mr-5 relative bottom-[62px] md:static md:mr-0'>
+              <Button2 text='VIEW'/>
             </div>
+          </div>
         </div>
 
         <div className='lazyMe flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
-          <img lazyPic="/images/designs/core-mockup.webp" alt="design_image" className='design-img lazyMe'/>
+          <div className='relative'>
+            <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
+            <img lazyPic="/images/designs/core-mockup.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
+          </div>
           
           <div className='flex flex-col items-end md:items-start md:gap-2 xl:gap-4 '>
             <DesignLabel title='CORE Mockups' tool='Adobe XD'/>
@@ -38,17 +45,24 @@ export default function Designs({sectionIds}) {
         </div>
 
         <div className='lazyMe flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
-          <img lazyPic="/images/designs/risewave.webp" alt="design_image" className='design-img lazyMe'/>
-            <div className='flex flex-col items-end md:gap-2 xl:gap-4 '>
-              <DesignLabel title='Risewave' tool='Figma'/>
-              <div className='mr-5 relative bottom-[62px] md:static md:mr-0'>
-                <Button2 text='VIEW'/>
-              </div>
+          <div className='relative'>
+            <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
+            <img lazyPic="/images/designs/risewave.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
+          </div>
+          
+          <div className='flex flex-col items-end md:gap-2 xl:gap-4 '>
+            <DesignLabel title='Risewave' tool='Figma'/>
+            <div className='mr-5 relative bottom-[62px] md:static md:mr-0'>
+              <Button2 text='VIEW'/>
             </div>
+          </div>
         </div>
 
         <div className='lazyMe flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
-          <img lazyPic="/images/designs/exam.webp" alt="design_image" className='design-img lazyMe'/>
+          <div className='relative'>
+            <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
+            <img lazyPic="/images/designs/exam.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
+          </div>
           
           <div className='flex flex-col items-end md:items-start md:gap-2 xl:gap-4 '>
             <DesignLabel title='Syntactics’ Revamp Online Examination' tool='Figma'/>
@@ -59,17 +73,24 @@ export default function Designs({sectionIds}) {
         </div>
 
         <div className='lazyMe flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
-          <img lazyPic="/images/designs/revised.webp" alt="design_image" className='design-img lazyMe'/>
-            <div className='flex flex-col items-end md:gap-2 xl:gap-4 '>
-              <DesignLabel title='Syntactics’ Revamp Online Examination (Revised)' tool='Figma'/>
-              <div className='mr-5 relative bottom-[82px] md:static md:mr-0'>
-                <Button2 text='VIEW'/>
-              </div>
+          <div className='relative'>
+            <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
+            <img lazyPic="/images/designs/revised.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
+          </div>
+          
+          <div className='flex flex-col items-end md:gap-2 xl:gap-4 '>
+            <DesignLabel title='Syntactics’ Revamp Online Examination (Revised)' tool='Figma'/>
+            <div className='mr-5 relative bottom-[82px] md:static md:mr-0'>
+              <Button2 text='VIEW'/>
             </div>
+          </div>
         </div>
 
         <div className='lazyMe flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
-          <img lazyPic="/images/designs/medgrocer.webp" alt="design_image" className='design-img lazyMe'/>
+          <div className='relative'>
+            <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
+            <img lazyPic="/images/designs/medgrocer.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
+          </div>
           
           <div className='flex flex-col items-end md:items-start md:gap-2 xl:gap-4 '>
             <DesignLabel title='MedGrocer' tool='Figma'/>
