@@ -16,7 +16,7 @@ export default function Designs({sectionIds}) {
 
       <div className='base w-full md:gap-[90px] xl:gap-[120px] 2xl:gap-[170px]'>
 
-        <div className='lazyMe flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <div className=' flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
             <img lazyPic="/images/designs/tuklaspital.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -30,7 +30,7 @@ export default function Designs({sectionIds}) {
           </div>
         </div>
 
-        <div className='lazyMe flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <div className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
             <img lazyPic="/images/designs/core-mockup.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -44,7 +44,7 @@ export default function Designs({sectionIds}) {
           </div>
         </div>
 
-        <div className='lazyMe flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <div className=' flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
             <img lazyPic="/images/designs/risewave.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -58,7 +58,7 @@ export default function Designs({sectionIds}) {
           </div>
         </div>
 
-        <div className='lazyMe flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <div className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
             <img lazyPic="/images/designs/exam.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -72,7 +72,7 @@ export default function Designs({sectionIds}) {
           </div>
         </div>
 
-        <div className='lazyMe flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <div className=' flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
             <img lazyPic="/images/designs/revised.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -86,7 +86,7 @@ export default function Designs({sectionIds}) {
           </div>
         </div>
 
-        <div className='lazyMe flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <div className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img'/>
             <img lazyPic="/images/designs/medgrocer.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>

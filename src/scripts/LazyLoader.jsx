@@ -8,7 +8,10 @@ export function lazyLoader(){
           const img = entry.target;
           const src = img.getAttribute('lazyPic');
           img.setAttribute('src', src);
-          img.classList.add('unlazyMe');
+          img.addEventListener('load', () => {
+
+            img.classList.add('unlazyMe');
+          });
           observer.disconnect();
         }
 
