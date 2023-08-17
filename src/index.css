@@ -15,11 +15,11 @@
 /* lazy loading */
 
 .lazyMe{
-  @apply opacity-0 transition-all duration-[550s] ease-in-out
+  @apply opacity-0 transition-all duration-[550ms] ease-in-out
 }
 
 .unlazyMe{
-  @apply opacity-100 transition-all duration-[550s] ease-in-out
+  @apply opacity-100 transition-all duration-[550ms] ease-in-out
 }
 
 /* Fonts */
