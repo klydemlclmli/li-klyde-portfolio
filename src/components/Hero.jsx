@@ -11,8 +11,7 @@ function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
+    const observer = new IntersectionObserver(([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
       { threshold: 0.3 } // Adjust the threshold as needed
@@ -41,20 +40,20 @@ function Hero() {
 
   return (
     <div className='flex relative w-full items-end justify-center'>
-      <div ref={ref} style={section} className='flex w-full items-end justify-center
+      <div ref={ref} style={window.innerWidth < 1100 ? null : section} className='flex w-full items-end justify-center
                       h-[517px] md:h-[430px] lg:h-[624px] xl:h-[724px] 2xl:h-[824px] text-black'>               
       
         <div className='flex flex-col absolute self-start 
                         font-besley font-medium
                         text-5xl lg:text-6xl xl:text-7xl 2xl:text-[100px]'>
-          <div style={name} className='z-[3]'>
+          <div style={window.innerWidth < 1100 ? null : name} className='z-[3]'>
           <p className='relative left-[-10px]
                           md:left-[-70px] md:top-0
                           lg:left-[-100px] lg:top-[50px]
                           xl:left-[-150px]
                           2xl:left-[-200px] animate-slideDown'><span className='italic'>K</span>LYDE</p> 
           </div> 
-          <div style={name} className='z-[3]'>
+          <div style={window.innerWidth < 1100 ? null : name} className='z-[3]'>
           <p className='relative left-[10px] top-[4px]
                           md:left-[190px] md:top-[50px]
                           lg:left-[250px] lg:top-[100px]
@@ -62,7 +61,7 @@ function Hero() {
                           2xl:left-[400px] animate-slideLeft'>
                             MALCOLM</p>  
           </div>
-          <div style={name} className='self-end relative left-[-10px] top-[4px]
+          <div style={window.innerWidth < 1100 ? null : name} className='self-end relative left-[-10px] top-[4px]
                             md:self-start md:left-[5px] md:top-[110px]
                             lg:left-[-10px] lg:top-[200px]
                             xl:left-[10px] 2xl:top-[290px]
@@ -72,32 +71,32 @@ function Hero() {
           </div>  
         </div>
 
-        <div style={moon} className='relative left-[-40px] xl:bottom-[70px] 2xl:bottom-[175px]'>
+        <div style={window.innerWidth < 1100 ? null : moon} className='relative left-[-40px] xl:bottom-[70px] 2xl:bottom-[175px]'>
           <img src="images/hero/moon.webp" alt="moon" className='invisible animate-moonUp'/>
         </div>
         
-        <div style={mountain4} className='absolute z-[2]'>
+        <div style={window.innerWidth < 1100 ? null : mountain4} className='absolute z-[2]'>
           <img src="images/hero/mountain-4.webp" alt="mountain-4" className='animate-mountainOneUp w-screen'/>
         </div>
 
-        <div style={mountain3} className='absolute z-[4]'>
+        <div style={window.innerWidth < 1100 ? null : mountain3} className='absolute z-[4]'>
           <img src="images/hero/mountain-3.webp" alt="mountain-3"className='animate-mountainOneUp w-screen'/>
         </div>
 
-        <div style={mountain2} className='absolute z-[5]'>
+        <div style={window.innerWidth < 1100 ? null : mountain2} className='absolute z-[5]'>
           <img src="images/hero/mountain-2.webp" alt="mountain-2" className='animate-mountainUp w-screen'/>
         </div>
 
-        <div style={trees} className='absolute z-[7]'>
+        <div style={window.innerWidth < 1100 ? null : trees} className='absolute z-[7]'>
           <img src="images/hero/trees.webp" alt="trees" className='animate-treesUp w-screen'/>
         </div>
 
-        <div style={hero} className='absolute z-[8]'>
+        <div style={window.innerWidth < 1100 ? null : hero} className='absolute z-[8]'>
           <img src="images/hero/shadow.webp" alt="shadow" 
           className='max-h-[430px] lg:max-h-[690px] animate-shadowUp'/>
         </div>
 
-        <div style={hero} className='absolute z-[9]'>
+        <div style={window.innerWidth < 1100 ? null : hero} className='absolute z-[9]'>
           <img src="images/hero/hero.webp" alt="hero" 
           className='max-h-[430px] lg:max-h-[690px] animate-slideUp'/>
         </div>

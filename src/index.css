@@ -15,11 +15,11 @@
 /* lazy loading */
 
 .lazyMe{
-  @apply opacity-0 transition-all duration-[1s] ease-in-out
+  @apply opacity-0
 }
 
 .unlazyMe{
-  @apply opacity-100 transition-all duration-[1s] ease-in-out
+  @apply opacity-100 transition-all duration-[550ms] ease-in-out
 }
 
 /* Fonts */
@@ -47,12 +47,18 @@ header .close_nav {
 	@apply flex flex-col items-center;
 }
 
+/* top-[70px] md:top-[40px] lg:top-[70px] */
 .aboutText{
-	@apply relative top-[70px] md:top-[40px] lg:top-[70px] 2xl:top-[110px]
+	@apply relative xl:top-[70px] 2xl:top-[110px]
 }
 
 .sectionLabel{
 	@apply font-besley text-4xl lg:text-5xl 2xl:text-[60px] font-medium underline underline-offset-8 pb-1
+}
+
+/* About image og:pb-16*/
+.aboutImg{
+  @apply my-4 xl:pb-16 lg:pb-20 2xl:pb-28 max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] 2xl:max-w-[540px] w-full
 }
 
 
