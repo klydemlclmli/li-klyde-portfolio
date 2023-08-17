@@ -6,12 +6,17 @@ export function lazyLoader(){
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const img = entry.target;
-          const src = img.getAttribute('lazyPic');
-          img.setAttribute('src', src);
-          img.addEventListener('load', () => {
 
+          if (img.hasAttribute('lazyPic')){
+            const src = img.getAttribute('lazyPic');
+            img.setAttribute('src', src);
+            img.addEventListener('load', () => {
             img.classList.add('unlazyMe');
           });
+          }else{
+            img.classList.add('unlazyMe');
+          }
+
           observer.disconnect();
         }
 

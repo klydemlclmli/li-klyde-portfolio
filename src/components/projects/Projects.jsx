@@ -39,7 +39,7 @@ export default function Projects({sectionIds}) {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container slider "
+        className="swiper_container slider lazyMe"
       >
         <SwiperSlide className='swiper-slide relative'>
           <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
