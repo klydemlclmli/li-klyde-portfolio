@@ -5,7 +5,8 @@ export default {
     extend: {
       dropShadow:{
         'btn-shadow': '0px 0px 34px rgba(255, 255, 255, 0.25)',
-        'blk-shadow': '0px 0px 34px rgba(0, 0, 0, 0.25)'
+        'blk-shadow': '0px 0px 34px rgba(0, 0, 0, 0.25)',
+        'ftr-shadow': '0px 0px 34px rgba(255, 255, 255, 1)',
       },
       keyframes: {
         slideOut: {
@@ -64,11 +65,13 @@ export default {
       'socmed-hover': '#887E72',
       'transparent': 'transparent',
       'og-white': '#FFFFFF',
+      'ftr-line': 'rgba(28, 28, 28, 0.75)',
       },
     
     backgroundImage: {
       'main': 'radial-gradient(50% 50.00% at 50% 50.00%, #CDD4D7 0%, #8B8F90 100%)',
       'splash': 'linear-gradient(180deg, #59534D 0%, #59534D 0.01%, #34312D 100%)',
+      'footer': 'linear-gradient(180deg, #D1C8BD 0%, #756859 100%)',
     },
 
     fontFamily: {

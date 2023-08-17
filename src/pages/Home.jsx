@@ -3,6 +3,7 @@ import Hero from '../components/Hero.jsx';
 import About from '../components/About.jsx';
 import Projects from '../components/projects/Projects.jsx';
 import Designs from '../components/designs/Designs.jsx';
+import Footer from '../components/Footer.jsx';
 
 
 function Home() {
@@ -22,7 +23,7 @@ function Home() {
       <About sectionIds={sectionIds}/>
       <Projects sectionIds={sectionIds}/>
       <Designs sectionIds={sectionIds}/>
-      <div className="w-full h-[615px] bg-beige z-10" id={sectionIds.contact}></div>
+      <Footer sectionIds={sectionIds}/>
     </div>
   )
 }
