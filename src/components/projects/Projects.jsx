@@ -15,7 +15,7 @@ export default function Projects({sectionIds}) {
   lazyLoader();
 
   return (
-    <div id={sectionIds.projects} className='base w-full gap-[40px] 2xl:gap-[70px] bg-navy text-white py-[90px] px-[12px] md:px-8 xl:px-20 z-10'>
+    <div id={sectionIds.projects} className='base w-full gap-[40px] 2xl:gap-[70px] bg-navy text-white py-[90px] px-[12px] md:px-8 xl:px-20 2xl:px-[130px] z-10'>
 
       <p className='sectionLabel'>
         PROJECTS

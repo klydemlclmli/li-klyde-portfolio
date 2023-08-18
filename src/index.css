@@ -22,6 +22,14 @@
   @apply opacity-100 transition-all duration-[550ms] ease-in-out
 }
 
+.myToast{
+  @apply opacity-100 transition-all duration-[250ms] ease-in-out
+}
+
+.myUnToast{
+  @apply opacity-0 transition-all duration-[250ms] ease-in-out
+}
+
 /* Fonts */
 @font-face {
   font-family: 'Besley';
@@ -58,7 +66,7 @@ header .close_nav {
 
 /* About image og:pb-16*/
 .aboutImg{
-  @apply my-4 xl:pb-16 lg:pb-20 2xl:pb-28 max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] 2xl:max-w-[540px] w-full
+  @apply my-4 xl:pb-20 2xl:pb-28 max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] 2xl:max-w-[540px] w-full
 }
 
 

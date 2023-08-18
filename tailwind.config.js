@@ -7,6 +7,7 @@ export default {
         'btn-shadow': '0px 0px 34px rgba(255, 255, 255, 0.25)',
         'blk-shadow': '0px 0px 34px rgba(0, 0, 0, 0.25)',
         'ftr-shadow': '0px 0px 34px rgba(255, 255, 255, 1)',
+        'socmed-hvr': '0px 0px 34px rgba(221, 199, 172, 0.25)',
       },
       keyframes: {
         slideOut: {
@@ -66,6 +67,7 @@ export default {
       'transparent': 'transparent',
       'og-white': '#FFFFFF',
       'ftr-line': 'rgba(28, 28, 28, 0.75)',
+      'ftr-brdr': '#DED8D0',
       },
     
     backgroundImage: {

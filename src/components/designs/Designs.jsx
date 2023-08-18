@@ -8,7 +8,7 @@ export default function Designs({sectionIds}) {
   lazyLoader();
 
   return (
-    <div id={sectionIds.designs} className='base py-[60px] 2xl:py-[100px] 2xl:pb-[170px] md:pb-[90px] px-5 md:px-10 2xl:px-14 font-syne text-black font-bold text-[14px] gap-14 2xl:gap-[100px]'>
+    <div id={sectionIds.designs} className='base py-[60px] 2xl:py-[100px] 2xl:pb-[170px] md:pb-[90px] px-5 md:px-10 2xl:px-[130px] font-syne text-black font-bold text-[14px] gap-14 2xl:gap-[100px]'>
 
       <p className='sectionLabel'>
         DESIGNS

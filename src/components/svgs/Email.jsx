@@ -4,7 +4,7 @@ export default function Email() {
   return (
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
     width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
-    preserveAspectRatio="xMidYMid meet" className=' w-[17px] h-[17px]'>
+    preserveAspectRatio="xMidYMid meet" className=' w-[17px] h-[17px] md:w-[34px] md:h-[34px]'>
 
       <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
       fill="#000000" stroke="none" className='fill-black'>
@@ -24,6 +24,5 @@ export default function Email() {
       -344 -769 -765z"/>
       </g>
     </svg>
-
   )
 }
