@@ -56,6 +56,11 @@ export default function Projects({sectionIds}) {
           <img lazyPic="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
           <ProjectLabel label='Web-based Appointment System for ASEA iWork Builders Co.'/>
         </SwiperSlide>
+        <SwiperSlide className='swiper-slide relative'>
+          <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
+          <img lazyPic="/images/projects/login-register.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
+          <ProjectLabel label='Login and Register'/>
+        </SwiperSlide>
 
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">

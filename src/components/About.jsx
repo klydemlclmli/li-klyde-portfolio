@@ -17,7 +17,7 @@ export default function About({sectionIds}) {
       </p>
 
       <p style={window.innerWidth < 1100 ? null : text} className='aboutText md:w-[400px] lg:w-[450px] xl:w-[500px] 2xl:w-[540px] z-[1]'>
-        Hey, there! I’m <b>Klyde</b>, a Web Designer and Developer as of the creation of this portfolio.
+        Hey, there! I’m <b>Klyde</b>, an aspiring Web Designer and Developer as of the creation of this portfolio.
       </p>
 
       <div className='base md:flex-row gap-[40px] xl:gap-[60px] 2xl:gap-[140px] '>
