@@ -2,9 +2,9 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import SplashScreen from './pages/Splash.jsx';
 import Home from './pages/Home.jsx';
-const Core = lazy(() => import('./components/projects/pages/Core.jsx'));
+// const Core = lazy(() => import('./components/projects/pages/Core.jsx'));
 // import Home from './pages/Home.jsx';
-// import Core from './components/projects/pages/Core.jsx';
+import Core from './components/projects/pages/Core.jsx';
 
 function App() {
     return (
