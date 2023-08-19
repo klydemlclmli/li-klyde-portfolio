@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 import ProjectLabel from './ProjectLabel';
 import { lazyLoader } from '../../scripts/LazyLoader';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -11,17 +12,24 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
-export default function Projects({sectionIds}) {
+export default function Projects(props) {
+  const slideTo = props.slideTo;
+
   lazyLoader();
 
+  const params = {
+    initialSlide: slideTo, // Set the initial slide to the 3rd slide
+  };
+
   return (
-    <div id={sectionIds.projects} className='base w-full gap-[40px] 2xl:gap-[70px] bg-navy text-white py-[90px] px-[12px] md:px-8 xl:px-20 2xl:px-[130px] z-10'>
+    <div id={props.sectionIds.projects} className='base w-full gap-[40px] 2xl:gap-[70px] bg-navy text-white py-[90px] px-[12px] md:px-8 xl:px-20 2xl:px-[130px] z-10'>
 
       <p className='sectionLabel'>
         PROJECTS
       </p>
 
       <Swiper
+      {...params}
         effect={'coverflow'}
         centeredSlides={true}
         loop={false}
@@ -41,26 +49,36 @@ export default function Projects({sectionIds}) {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container slider lazyMe"
       >
+        
+        
         <SwiperSlide className='swiper-slide relative'>
-          <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
-          <img lazyPic="/images/projects/core.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
-          <ProjectLabel label='CEAP Online Resources for Education (CORE)'/>
+            <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
+            <img lazyPic="/images/projects/core.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
+            <ProjectLabel label='CEAP Online Resources for Education (CORE)'/>
         </SwiperSlide>
+        
+
         <SwiperSlide className='swiper-slide relative'>
           <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
           <img lazyPic="/images/projects/cryptocause.webp" alt="slide_image" className='swiper-slide-img object-left lazyMe absolute top-0 left-0'/>
           <ProjectLabel label='CryptoCause'/>
         </SwiperSlide>
+
         <SwiperSlide className='swiper-slide relative'>
-          <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
-          <img lazyPic="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
-          <ProjectLabel label='Web-based Appointment System for ASEA iWork Builders Co.'/>
+          <Link to='/projects/CORE'>
+            <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
+            <img lazyPic="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
+            <ProjectLabel label='Web-based Appointment System for ASEA iWork Builders Co.'/>
+          </Link>
         </SwiperSlide>
+
         <SwiperSlide className='swiper-slide relative'>
           <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
           <img lazyPic="/images/projects/login-register.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
           <ProjectLabel label='Login and Register'/>
         </SwiperSlide>
+
+        {/* <button onClick={swipeToThird}>Test</button> */}
 
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
