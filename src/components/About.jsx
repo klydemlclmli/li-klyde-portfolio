@@ -1,9 +1,12 @@
+import { useEffect } from 'react';
 import useParallax from '../scripts/Parallax';
 import { lazyLoader } from '../scripts/LazyLoader';
 
 export default function About({sectionIds}) {
 
-  lazyLoader();
+  useEffect(() => {
+    lazyLoader();
+  }, []);
 
   // Parallax effect
   const { offsetY } = useParallax();

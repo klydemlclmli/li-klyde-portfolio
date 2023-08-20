@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import ProjectLabel from './ProjectLabel';
@@ -15,7 +15,9 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 export default function Projects(props) {
   const slideTo = props.slideTo;
 
-  lazyLoader();
+  useEffect(() => {
+    lazyLoader();
+  }, []);
 
   const params = {
     initialSlide: slideTo, // Set the initial slide to the 3rd slide
@@ -52,9 +54,11 @@ export default function Projects(props) {
         
         
         <SwiperSlide className='swiper-slide relative'>
+          <Link to='/projects/CORE'>
             <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
             <img lazyPic="/images/projects/core.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
             <ProjectLabel label='CEAP Online Resources for Education (CORE)'/>
+          </Link>
         </SwiperSlide>
         
 
@@ -65,7 +69,7 @@ export default function Projects(props) {
         </SwiperSlide>
 
         <SwiperSlide className='swiper-slide relative'>
-          <Link to='/projects/CORE'>
+          <Link to='/projects/Asea'>
             <img src="/images/designs/designHolder.webp" alt="slide_holder" className='swiper-slide-img'/>
             <img lazyPic="/images/projects/asea.webp" alt="slide_image" className='swiper-slide-img lazyMe absolute top-0 left-0'/>
             <ProjectLabel label='Web-based Appointment System for ASEA iWork Builders Co.'/>
