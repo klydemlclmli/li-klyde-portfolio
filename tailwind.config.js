@@ -86,7 +86,7 @@ export default {
       'md': '741px',
       'lg': '938px',
       'xl': '1100px',
-      '2xl': '1536px'
+      '2xl': '1628px'
     }
   },
   plugins: [],
