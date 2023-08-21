@@ -9,7 +9,7 @@ export default function Asea() {
   }, []);
 
   return (
-    <div className='base bg-black text-og-white font-syne font-bold text-[24px] lg:text-[30px] xl:text-[36px] gap-12 2xl:gap-24 p-[30px] pb-[90px] 2xl:pb-[140px] md:px-[80px] 2xl:px-[130px] md:py-[60px]'>
+    <div className='project-page'>
       {/* Top part */}
       <ProjectPageInfo
         scrollTo = 'projects'
@@ -22,8 +22,8 @@ export default function Asea() {
       />
 
       {/* Images */}
-      <div className='flex flex-col items-center md:items-start gap-8 md:gap-12 2xl:gap-24 w-full'>
-        <img lazyPic="/images/projects/asea/1.webp" alt="design_image" className='project-img lazyMe md:self-end'/>
+      <div className='images-grp'>
+        <img lazyPic="/images/projects/asea/1.webp" alt="design_image" className='project-img lazyMe xl:self-end'/>
         <img lazyPic="/images/projects/asea/2.webp" alt="design_image" className='project-img lazyMe'/>
       </div>
     </div>

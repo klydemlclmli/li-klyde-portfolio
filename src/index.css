@@ -150,8 +150,17 @@ header .close_nav {
 }
 
 /* Project page images */
+/* max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px]  */
 .project-img{
-	@apply max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[1100px] md:drop-shadow-blk-shadow
+	@apply md:max-w-[640px] lg:max-w-[835px] xl:max-w-[850px] 2xl:max-w-[1100px] md:drop-shadow-blk-shadow
+}
+
+.project-page{
+  @apply base bg-black text-og-white font-syne font-bold text-[24px] lg:text-[30px] xl:text-[36px] gap-12 2xl:gap-24 py-[30px] px-5 pb-[90px] 2xl:pb-[140px] md:px-[50px] xl:px-[70px] 2xl:px-[130px] md:py-[60px]
+}
+
+.images-grp{
+  @apply flex flex-col items-center xl:items-start gap-8 md:gap-12 2xl:gap-24 w-full
 }
 
 img {
