@@ -10,6 +10,7 @@ import { useLocation } from 'react-router-dom';
 
 function Home() {
 
+  // IDs for the different sections of the page
   const sectionIds = {
     home: 'home',
     about: 'about',
@@ -26,7 +27,7 @@ function Home() {
   const revised = useRef(null);
   const medgrocer = useRef(null);
 
-  // a map of identifiers to refs
+  // A map of identifiers to refs
   const refMap = {
     'tuklaspital': tuklaspital,
     'coreMockup': coreMockup,
@@ -36,10 +37,10 @@ function Home() {
     'medgrocer': medgrocer,
   };
 
-  // From the Back button from the other pages
+  // From the Back button from the other Projects and Designs pages
   const location = useLocation();
 
-  // For the Project section
+  // For the Project Swiper slider
   const slideTo = location?.state?.slideTo || 0;
 
   // For the Design section
@@ -52,8 +53,11 @@ function Home() {
     const section = document.getElementById(scrollToSection);
     if (section) {
       section.scrollIntoView({ block: 'center' });
-    }else{
+    }else if (designRef){
       designRef.current.scrollIntoView({ block: 'center' });
+    }else{
+      const home = document.getElementById(sectionIds.home);
+      home.scrollIntoView();
     }
   }, [location]);
   
