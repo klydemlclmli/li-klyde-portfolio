@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import SplashScreen from './pages/Splash.jsx';
-import Loading from './pages/Splash.jsx';
+import Loading from './pages/Loading.jsx';
 import Home from './pages/Home.jsx';
 const Core = lazy(() => import('./components/projects/pages/Core.jsx'));
 const CryptoCause = lazy(() => import('./components/projects/pages/CryptoCause.jsx'));

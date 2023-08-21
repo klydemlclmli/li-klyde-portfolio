@@ -25,7 +25,7 @@ export default function Core() {
 
       {/* Images */}
       <div className='images-grp'>
-        <img lazyPic="/images/projects/core/1.webp" alt="projpage_image" className='project-img lazyMe xl:self-end'/>
+        <img src="/images/projects/core/1.webp" alt="projpage_image" className='project-img lazyMe xl:self-end'/>
         <img lazyPic="/images/projects/core/2.webp" alt="projpage_image" className='project-img lazyMe'/>
         <img lazyPic="/images/projects/core/3.webp" alt="projpage_image" className='project-img lazyMe xl:self-end'/>
         <img lazyPic="/images/projects/core/4.webp" alt="projpage_image" className='project-img lazyMe'/>

@@ -9,4 +9,4 @@ const Loading = () => {
   );
 };
 
-export default SplashScreen;
+export default Loading;
