@@ -5,6 +5,7 @@ import { lazyLoader } from '../../../scripts/LazyLoader';
 export default function CryptoCause() {
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     lazyLoader();
   }, []);
 

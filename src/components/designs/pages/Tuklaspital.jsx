@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import DesignPageInfo from './DesignPageInfo';
 import { lazyLoader } from '../../../scripts/LazyLoader';
-import { useLocation } from 'react-router-dom';
 
 export default function Tuklaspital() {
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     lazyLoader();
   }, []);
 

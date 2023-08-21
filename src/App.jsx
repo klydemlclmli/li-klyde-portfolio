@@ -17,7 +17,7 @@ function App() {
       <>
       <SplashScreen className='z-50'/>
 
-      <Suspense fallback={<SplashScreen className='z-50'/>}>
+      <Suspense>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/projects/CORE' element={<Core/>}/>
