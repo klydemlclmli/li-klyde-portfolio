@@ -7,6 +7,8 @@ const CryptoCause = lazy(() => import('./components/projects/pages/CryptoCause.j
 const Asea = lazy(() => import('./components/projects/pages/Asea.jsx'));
 const LoginRegister = lazy(() => import('./components/projects/pages/LoginRegister.jsx'));
 
+const Tuklaspital = lazy(() => import('./components/designs/pages/Tuklaspital.jsx'));
+
 // import Home from './pages/Home.jsx';
 // import Core from './components/projects/pages/Core.jsx';
 
@@ -22,6 +24,8 @@ function App() {
           <Route path='/projects/CryptoCause' element={<CryptoCause/>}/>
           <Route path='/projects/ASEA' element={<Asea/>}/>
           <Route path='/projects/LoginRegister' element={<LoginRegister/>}/>
+
+          <Route path='/designs/Tuklaspital' element={<Tuklaspital/>}/>
         </Routes>
       </Suspense>
       </>

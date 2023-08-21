@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Navbar from '../components/nav/Navbar.jsx';
 import Hero from '../components/Hero.jsx';
 import About from '../components/About.jsx';
@@ -18,16 +18,42 @@ function Home() {
     contact: 'contact',
   };
 
+  // Refs for Designs
+  const tuklaspital = useRef(null);
+  const coreMockup = useRef(null);
+  const risewave = useRef(null);
+  const exam = useRef(null);
+  const revised = useRef(null);
+  const medgrocer = useRef(null);
+
+  // a map of identifiers to refs
+  const refMap = {
+    'tuklaspital': tuklaspital,
+    'coreMockup': coreMockup,
+    'risewave': risewave,
+    'exam': exam,
+    'revised': revised,
+    'medgrocer': medgrocer,
+  };
+
+  // From the Back button from the other pages
   const location = useLocation();
 
   // For the Project section
   const slideTo = location?.state?.slideTo || 0;
 
+  // For the Design section
+  const getDesignRef = location?.state?.designRef;
+  // Access the ref based on the passed identifier
+  const designRef = refMap[getDesignRef];
+
   useEffect(() => {
-    const scrollToSection = location?.state?.scrollTo || sectionIds.home;
+    const scrollToSection = location?.state?.scrollTo;
     const section = document.getElementById(scrollToSection);
     if (section) {
-      section.scrollIntoView();
+      section.scrollIntoView({ block: 'center' });
+    }else{
+      designRef.current.scrollIntoView({ block: 'center' });
     }
   }, [location]);
   
@@ -37,7 +63,13 @@ function Home() {
       <Hero/>
       <About sectionIds={sectionIds}/>
       <Projects sectionIds={sectionIds} slideTo={slideTo}/>
-      <Designs sectionIds={sectionIds}/>
+      <Designs sectionIds={sectionIds}
+              tuklaspital={tuklaspital}
+              coreMockup={coreMockup}
+              risewave={risewave}
+              exam={exam}
+              revised={revised}
+              medgrocer={medgrocer}/>
       <Footer sectionIds={sectionIds}/>
     </div>
   )
