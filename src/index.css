@@ -150,6 +150,7 @@ header .close_nav {
 }
 
 /* Project page images */
+
 /* max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px]  */
 .project-img{
 	@apply w-full max-w-[640px] lg:max-w-[835px] xl:max-w-[850px] 2xl:max-w-[1100px] md:drop-shadow-blk-shadow

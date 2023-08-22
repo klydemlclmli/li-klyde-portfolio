@@ -31,7 +31,7 @@ function Navbar({sectionIds}) {
 
       <div className='absolute top-[28px] 
                       left-[28px] lg:left-[60px] xl:left-[131px]'>
-        <a href="/#"><img src="images/KML.webp" alt="logo" 
+        <a href="/#"><img src="/images/KML.webp" alt="logo" 
                       className='min-w-[70px] max-w-[70px]
                                 md:min-w-[80px] md:max-w-[80px]'/>
         </a>

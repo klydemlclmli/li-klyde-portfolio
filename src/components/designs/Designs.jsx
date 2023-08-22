@@ -33,7 +33,7 @@ export default function Designs(props) {
           </div>
         </Link>
 
-        <div className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <Link ref={props.coreMockup} to='/designs/CoreMockups' className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img lazyMe'/>
             <img lazyPic="/images/designs/core-mockup.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -45,9 +45,9 @@ export default function Designs(props) {
               <Button2 text='VIEW'/>
             </div>
           </div>
-        </div>
+        </Link>
 
-        <div className=' flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <Link ref={props.risewave} to='/designs/Risewave' className=' flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img lazyMe'/>
             <img lazyPic="/images/designs/risewave.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -59,9 +59,9 @@ export default function Designs(props) {
               <Button2 text='VIEW'/>
             </div>
           </div>
-        </div>
+        </Link>
 
-        <div className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <Link ref={props.exam} to='/designs/SyntacticsExamRevamp' className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img lazyMe'/>
             <img lazyPic="/images/designs/exam.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -73,9 +73,9 @@ export default function Designs(props) {
               <Button2 text='VIEW'/>
             </div>
           </div>
-        </div>
+        </Link>
 
-        <div className=' flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <Link ref={props.revised} to='/designs/SyntacticsExamRevised' className=' flex flex-col md:self-start md:flex-row md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img lazyMe'/>
             <img lazyPic="/images/designs/revised.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -87,9 +87,9 @@ export default function Designs(props) {
               <Button2 text='VIEW'/>
             </div>
           </div>
-        </div>
+        </Link>
 
-        <div ref={props.medgrocer} className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
+        <Link ref={props.medgrocer} to='/designs/MedGrocer' className=' flex flex-col md:self-end md:flex-row-reverse md:gap-5 drop-shadow-blk-shadow md:drop-shadow-none'>
           <div className='relative'>
             <img src="/images/designs/designHolder.webp" alt="design_holder" className='design-img lazyMe'/>
             <img lazyPic="/images/designs/medgrocer.webp" alt="design_image" className='design-img lazyMe absolute top-0 left-0'/>
@@ -101,7 +101,7 @@ export default function Designs(props) {
               <Button2 text='VIEW'/>
             </div>
           </div>
-        </div>
+        </Link>
 
       </div>
     </div>
