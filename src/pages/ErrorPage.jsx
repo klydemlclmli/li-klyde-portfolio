@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button2 from '../components/buttons/Button2';
 import SplashScreen from './Splash';
 
 export default function ErrorPage() {
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+  }, []);
 
   return (
     <div className='base bg-main w-screen h-screen justify-center font-syne font-semibold text-5xl text-black text-center px-5 gap-2 xl:gap-0'>
