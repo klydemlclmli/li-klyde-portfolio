@@ -20,17 +20,17 @@ export default function About({sectionIds}) {
       </p>
 
       <p style={window.innerWidth < 1100 ? null : text} className='aboutText md:w-[400px] lg:w-[450px] xl:w-[500px] 2xl:w-[540px] z-[1]'>
-        Hey, there! I’m <b>Klyde</b>, an aspiring Web Designer and Developer as of the creation of this portfolio.
+        Hey, there! I’m <b>Klyde</b>, a UI/UX Designer.
       </p>
 
       <div className='base md:flex-row gap-[40px] xl:gap-[60px] 2xl:gap-[140px] '>
         <div className="relative">
-          <img lazyPic="images/about-pic.webp" alt="about-pic" className='lazyMe aboutImg absolute top-0 left-0'/>
+          <img lazyPic="images/about-me.webp" alt="about-pic" className='lazyMe aboutImg absolute top-0 left-0'/>
           <img src="images/projectLoader.webp" alt="about-pic-holder" className='aboutImg opacity-0'/> 
         </div>
         <p style={window.innerWidth < 1100 ? null : text} className='aboutText md:w-[400px] 2xl:w-[535px]'>
-          A fresh grad from the University of Santo Tomas (Manila, Philippines) with a degree on Bachelor of Science in <b>Information Technology</b>, I specialized in Web and Mobile Development.
-          </p>
+          Working in this field for various companies has broadened my expertise and skills, which allowed me to become <b>well-versed</b> with industry standards.
+        </p>
       </div>
 
       <div>
